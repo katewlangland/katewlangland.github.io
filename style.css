@@ -62,3 +62,13 @@ th { font-size:11px; text-transform:uppercase; letter-spacing:.06em; }
 #resource-list { padding-left:20px; }
 #footer { border-top:1px solid var(--ink); display:flex; justify-content:space-between; gap:20px; margin-top:90px; padding:20px 0 35px; font-size:12px; text-transform:uppercase; letter-spacing:.05em; }
 @media (max-width:750px) { .site-header { display:block; } .site-nav { margin-top:24px; gap:12px; } .hero,.page-layout { grid-template-columns:1fr; } .hero { padding:42px 0; } .gallery { grid-template-columns:1fr 1fr; gap:12px; } .gallery .offset,.gallery .lower { padding-top:0; } .gallery figure:last-child { grid-column:1/-1; width:70%; margin-left:auto; } .caption { display:block; } .caption span { display:block; } .index-entry { grid-template-columns:36px 1fr 20px; } .index-entry .description { display:none; } .project { grid-template-columns:35px 1fr; } .project p { grid-column:2; } .cv-top { display:block; } .contact { text-align:left; } .job { grid-template-columns:1fr; gap:8px; } .section-heading { margin-top:60px; } #footer { flex-direction:column; } }
+
+/* Preserve the complete artworks without cropping. */
+.gallery img { height:auto; object-fit:contain; }
+.gallery .tall img, .gallery .wide img { aspect-ratio:auto; }
+.gallery .caption { flex-wrap:wrap; }
+
+/* Minimal homepage introduction */
+.home-intro { padding: 36px 0 38px; }
+.home-intro .hero-aside { max-width: 530px; }
+.home-intro .hero-aside p { margin-top: 0; }
