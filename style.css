@@ -72,3 +72,7 @@ th { font-size:11px; text-transform:uppercase; letter-spacing:.06em; }
 .home-intro { padding: 36px 0 38px; }
 .home-intro .hero-aside { max-width: 530px; }
 .home-intro .hero-aside p { margin-top: 0; }
+
+/* Final JPEG gallery: preserve original proportions without cropping. */
+.gallery img { width: 100%; height: auto; object-fit: contain; }
+.gallery .wide img, .gallery .tall img { aspect-ratio: auto; }
